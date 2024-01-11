@@ -1,0 +1,66 @@
+.subscribe-button{
+    background-color: rgb(199, 16, 16);
+    color: white;
+    border: none;
+     /* height: 36px; */ 
+    /* width:105px; */
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background-color 0.1s,color 0.1s ;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    /*  box-shadow: 10px 5px 10px black rgba(); */
+}
+
+/* when we hover over a button ony then style will apply */
+.subscribe-button:hover{
+    opacity: 0.8;
+    box-shadow: 10px 5px 10px rgb(196, 160, 160);
+    /* background-color: green; */
+    /* opacity: 0.7; it use to fade out the buttton */
+    
+
+}
+.subscribe-button:active{
+    opacity: 0.5;
+}
+.join-button{
+    background-color:white;
+    /* border-color: rgb(41,118,211); */
+    /* border-style: solid; */
+    /* border-width: 1px; */
+    color: rgb(41,118,211);
+    height: 70px;
+    width: 62px;
+    /* display: inline-block; */
+    border-radius: 2px;
+    cursor: pointer;
+    /* margin-right: 20px; */
+
+}
+
+.tweet-button{
+   background-color: rgb(2, 158, 255);
+   color:white;
+   border:none;
+   height:36px;
+   width: 74px;
+   border-radius: 18px;
+   font-weight: bold;
+   font-size:15px; 
+   cursor: pointer;
+   margin-left:8px;
+
+}
+
+.video-title{
+    font-size: 18px;
+    font-family: Arial;
+    font-weight: bold;
+    width:300px;
+    line-height:24px ; 
+
+}
+/* we describe class for the css use and we can give same class to the multiple element */
