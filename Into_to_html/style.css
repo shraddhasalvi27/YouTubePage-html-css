@@ -1,3 +1,13 @@
+p {
+     font-family: Arial;
+     margin-top: 0px;
+     margin-bottom: 0px;  
+     /* This are the properties that apply on the all the paragraph */
+     /* classes are used to appply properties on the specific target */
+     /* CSS specificity - those taregts are more specific have the higher priority */
+
+
+}
 .subscribe-button{
     background-color: rgb(199, 16, 16);
     color: white;
@@ -61,6 +71,28 @@
     font-weight: bold;
     width:300px;
     line-height:24px ; 
+    margin-bottom: 70px;
 
 }
+
+.apple-text{
+    background-color: rgb(187, 15, 15);
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    
+}
+.shop-link{
+    cursor: pointer;
+    margin-left: 5px;
+
+}
+.shop-link:hover{
+    text-decoration: underline;
+}
 /* we describe class for the css use and we can give same class to the multiple element */
+/* We can inspect the margin and padding of paragraph ad set it accordingly to adjust the line spacing. */
+
+
