@@ -1,0 +1,62 @@
+p{
+    font-family: Roboto,Arial;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.thumbnail{
+    width: 300px;
+    /* height: 300px;
+    object-fit: contain; 
+    /* object-fit: cover; */
+    /* here contain shrinks the image and cover crops the image */
+    /* according to the siz egiven object fit works */
+    /* object-position: bottom; */
+    /* border-width: 2px; */
+    /* border-style: solid; */
+    /* border-color: red; */ 
+    display : block;
+    margin-bottom: 12px;
+
+}
+.search-bar{
+    display: block;
+}
+.video-preview{
+    width: 300px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+}
+.video-author,.video-stats{
+    display: block;
+    font-size: 12px;
+    color: rgb(96,96,96);
+}
+.video-author{
+    margin-bottom: 4px;
+}
+.channel-pic{
+    display: inline-block;
+    width: 50px;
+    vertical-align: top;
+}
+.video-info{
+    display: inline-block;
+    width :200px;
+
+}
+.profile-pic{
+    width: 40px;
+    border-radius: 50px;
+}
+.Video-title{
+    /* vertical-align: top; */
+    margin-top: 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 12px;
+}
+.thumbnail-row{
+    margin-bottom: 12px;
+}
