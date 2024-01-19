@@ -35,15 +35,15 @@ p{
 .video-author{
     margin-bottom: 4px;
 }
+.video-info-grid{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
 .channel-pic{
-    display: inline-block;
-    width: 50px;
-    vertical-align: top;
+    background-color: gray;
 }
 .video-info{
-    display: inline-block;
-    width :200px;
-
+    background-color: gray;
 }
 .profile-pic{
     width: 40px;
