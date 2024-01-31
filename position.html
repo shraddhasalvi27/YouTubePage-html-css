@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position practice</title>
+</head>
+<body style="height: 3000px;
+             padding-top: 50px;
+             padding: 80px;">
+    <div style="
+        background-color: black;
+        color: white;
+        position: fixed;
+        top:0px;
+        left:0px;
+        height: 50px;
+        width: 1000px;;
+        z-index: 1;
+        "> 
+        header</div>
+        <!-- left right bottom and top are the margin from the edge -->
+        <!-- it can stretch /the element -->
+    <div style="
+         background-color:green;
+         color: white;
+         position: fixed;
+         left: 0;
+         bottom: 0;
+         top:50px;
+          width:70px;" >
+        sidebar
+    </div>
+    <div style="
+              position: absolute;
+              background-color: red;
+              color: white;
+              left: 10px;
+              ">
+              absolute</div>
+
+    
+    <!-- position in html is related to stick one part and move the remianing part like header is stick and remaining page we can scroll    -->
+    <div style="background-color: lightblue;
+                height: 200px;
+                width:200px;
+                position: relative;
+                   ">
+                Div1
+                <div style="
+              position: absolute;
+              background-color:black;
+              color: white;
+              right: 0px;
+              top:180px
+              ">
+              5:00</div>    
+    </div>
+    <div  style="background-color: lightpink;
+                 height: 200px;
+                 width:200px;">Div2
+    </div>
+</body>
+</html>

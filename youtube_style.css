@@ -1,6 +1,11 @@
 
 body{
     margin:0;
+    height: 3000px;
+    padding-top: 80px;
+    padding-left: 96px;
+    padding-right: 24px;
+    background-color: rgb(246, 240, 240);
 
 }
 p{
@@ -47,7 +52,7 @@ p{
     
 }
 .profile-pic{
-    width: 40px;
+    width: 36px;
     border-radius: 50px;
 }
 .Video-title{
@@ -63,9 +68,23 @@ p{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 16px;
-    row-gap: 45px;
+    row-gap: 40px;
     
 }
+
+@media (max-width:750px){
+    .video-grid {
+        grid-template-columns:1fr 1fr ;
+
+    }
+}
+@media(min-width:1000px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+
 
 
 /* started with header */
@@ -73,7 +92,17 @@ p{
     height: 55px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between; 
+    justify-content: space-between;
+    position: fixed; 
+    top: 0;
+    left:0;
+    right:0;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(228, 228, 228);
+    z-index: 100;
+
     /* it is for distribute the content evenly */
 }
 
@@ -107,6 +136,8 @@ p{
     border-style: solid;
     border-color: rgb(186, 186, 186);
     border-radius: 2px;
+    /* we can replace sryle color and width in one line */
+    /* border:1px solid gray; */
     box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
     width: 0;
 
@@ -125,7 +156,29 @@ p{
     border-color:rgb(186, 186, 186); 
     margin-left: -1px;
     margin-right: 10px;
+
+    position: relative;
 }
+.search-button .tooltip,
+.voice-search-button.tooltip{
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding:4px 8px 4px 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity:0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+.search-button:hover .tooltip,
+ .voice-search-button:hover .tooltip{
+    opacity:1;
+}
+
+
 .search{
     height: 25px;
     margin-top: 4px;
@@ -136,6 +189,10 @@ p{
     border-radius: 20px;
     border:none;
     background-color: rgb(248, 248, 248);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 .voice-search{
     height: 24px;
@@ -166,10 +223,85 @@ p{
     height: 24px;
 
 }
+.notiffication-icon-container{
+    position: relative;
+}
+.notification-count{
+    position: absolute;
+    top: -2px;
+    right: -5px;
+    background-color: rgb(177, 8, 8);
+    color: white;
+    font-family: Roboto,Arial ;
+    font-size: 11px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 9px;
+
+
+}
 .my-channel{
     height: 32px;
     border-radius: 16px;
 
 }
+.thumbnail-row{
+    position: relative;
+    margin-bottom: 12px;
+
+}
+.video-time{
+    font-family: Roboto,Arial;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px 4px 4px 4px ;
+    border-radius: 2px;
+    margin-left: -1px;
+    color: white;
+    background-color: black;
+    position: absolute;
+    bottom: 22px;
+    right:5px
+
+}
 
 
+/* sidebar code */
+.sidebar{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 55px;
+    background-color: white;
+    width: 72px;
+    z-index: 200;
+    padding-top: 5px;
+
+
+}
+
+.sidebar-link{
+    height:74px;
+    margin-bottom: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+.sidebar-link:hover{
+    background-color: rgb(235,235,235);
+}
+
+.sidebar-link img{
+    height: 24px;
+    margin-bottom: 5px;
+}
+.sidebar-link div{
+    color: black;
+    font-size: 10px;
+    font-family: Roboto,Arial;
+
+}
